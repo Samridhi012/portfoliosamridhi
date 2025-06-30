@@ -1,0 +1,144 @@
+body{
+  margin: 0;
+  padding: 0;
+}
+
+.navbar img{
+  height: 115px;
+  cursor: pointer;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+.navbar ul{
+  color: rgb(255, 255, 255);
+  font-size: larger;
+  font-weight: 600;
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+  position: fixed;
+  top: 28px;
+  left: 50%;
+  z-index: 2;
+
+  & li{
+    margin-right: 35px;
+    cursor: pointer;
+  }
+}
+
+.home img{
+  width: 100%;
+  height: 650px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+/* .home section img{
+  position: absolute;
+  top: 95%;
+  left: 5%;  
+  border-radius: 50%;
+  height: 250px;
+  width: 300px;
+}
+.home section p{
+  position: absolute;
+  top: 95%;
+  left: 35%;
+  display: flex;
+  flex-direction: column;
+} */
+
+/* .container{
+  display: grid;
+  grid-template-columns: 60px 60px;
+  grid-template-rows: 60px 60px;
+  grid-auto-flow: column;
+}
+.container img{
+  grid-column: 1;
+  grid-row: 1,2;
+  border-radius: 50%;
+  height: 250px;
+  width: 300px;
+  top: 95%;
+  left: 5%;
+}
+.container p{
+  grid-column: 2;
+  grid-row: 1;
+  top: 95%;
+  left: 35%;
+} */
+
+.home{
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+
+  &_parallax{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    &_img1{
+      z-index: var(--z-normal);
+    }
+
+    &_img2{
+      z-index: var(--z-tooltip);
+    }
+
+    &_img3{
+      z-index: var(--z-fixed);
+    }
+
+    &_img4{
+      z-index: var(--z-fixed);
+    }
+  }
+}
+/* .home_content{
+  position: absolute;
+  top: 30%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  color: var(--white-color);
+}
+.home_content h1{
+  font-size: var(--biggest-font-size);
+  z-index: var(--z-tooltip);
+} */
+
+.home_content {
+  position: absolute;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: var(--white-color);
+}
+
+.home_content h1 {
+  top: 32%;
+  font-size: var(--biggest-font-size);
+  z-index: var(--z-normal);
+}
+
+.home_content p {
+  top: 44%;
+  font-size: var(--h2-font-size);
+  font-weight: bold;
+  z-index: var(--z-tooltip);
+}
