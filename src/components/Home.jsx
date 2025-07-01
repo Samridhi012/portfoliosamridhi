@@ -6,6 +6,7 @@ import image4 from "../images/imgm4.png";
 function Home(){
     return(
         <div className="home">
+
             <div className="home_image">
                 <div className="home_parallax_img1">
                     <img src={image1} alt="first background layer"/>
@@ -24,15 +25,15 @@ function Home(){
             </div>
 
             <div className="home_content">
+                <p>Web <br/> Developer</p>
                 <h1>SAMRIDHI SHARMA</h1>
-                <p>Web developer</p>
             </div>
 
-            <div className="home_scroll">
+            {/* <div className="home_scroll">
                 <a href="#about">
                     <i class="bx bx-mouse"></i>
                 </a>
-            </div>
+            </div> */}
         </div>
     );
 }
