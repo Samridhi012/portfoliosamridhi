@@ -6,7 +6,7 @@ body{
 .navbar img{
   height: 115px;
   cursor: pointer;
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   z-index: 2;
@@ -18,7 +18,7 @@ body{
   list-style: none;
   display: flex;
   justify-content: space-evenly;
-  position: fixed;
+  position: absolute;
   top: 28px;
   left: 50%;
   z-index: 2;
@@ -157,4 +157,103 @@ body{
   font-weight: 600;
   position: absolute;
   left: 25%;
+}
+
+.skills{
+  /* background-color: rgb(250, 248, 244); */
+  background-color: #d9f9f26c;
+  & h1{
+    text-align: center;
+    font-size: 3rem;
+    margin-top: 20px;
+  }
+  & .skill-display{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin-left: 10%;
+  }
+}
+
+/* .skill-display{
+  .block{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 20px;
+
+    & h2{
+      font-size: 30px;
+      margin-bottom: 10px;
+    }
+
+    & box{
+      display: grid;
+      grid-template-rows: auto;
+      grid-template-columns: 400px 400px 400px;
+      text-align: center;
+    }
+  }
+} */
+
+.skill-display{
+  & .block{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+
+    & h2{
+      font-size: 25px;
+      margin-bottom: 15px;
+      color: #00395D;
+      /* transition: transform 0.3s ease;
+      &:hover{
+        transform: scale(1.5);
+        box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      } */
+    }
+
+    & .box{
+      display: grid;
+      grid-template-rows: auto;
+      grid-template-columns: repeat(5, 220px);
+      text-align: center;
+      border: rgb(209, 208, 208) 1px solid;
+      border-radius: 25px;
+    }
+  }
+}
+
+.box{
+  & .skill-info{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 30px;
+    border-radius: 10px;
+    /* border: 1px solid orange; */
+    border-radius: 25px;
+    transition: transform 0.3s ease;
+
+    &:hover{
+      transform: scale(1.05);
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+
+    & img{
+      width: 35px;
+      height: 35px;
+      /* border-radius: 50%; */
+      margin-right: 15px;
+    }
+
+    & p{
+      font-size: 18px;
+      color: black;
+    }
+  }
 }

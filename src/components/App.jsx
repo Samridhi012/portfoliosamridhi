@@ -1,6 +1,6 @@
 import Header from "./Header";
 import Home from "./Home";
-import Skills from "./Skills";
+import Skills from "./Skills/SkillsMain";
 
 function App() {
   return (
