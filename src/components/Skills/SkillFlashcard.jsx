@@ -1,6 +1,6 @@
 function SkillFlashcard(props){
     return(
-        <div className="skill-info" style={{ border: `1px solid ${props.color};` }}>
+        <div className="skill-info">
             <img src={props.icon} alt="language logo"/>
             <p>{props.skill}</p>
         </div>

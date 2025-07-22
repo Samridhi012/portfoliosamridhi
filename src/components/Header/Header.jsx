@@ -1,4 +1,5 @@
-import logo from "../images/s.white.withoutBG.png";
+import logo from "../../images/s.white.withoutBG.png";
+import "./header.css";
 
 function Header(){
     return(

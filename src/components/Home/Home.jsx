@@ -1,7 +1,8 @@
-import image1 from "../images/imgm1.png";
-import image2 from "../images/imgm2.png";   
-import image3 from "../images/imgm3.png";
-import image4 from "../images/imgm4.png";
+import image1 from "../../images/imgm1.png";
+import image2 from "../../images/imgm2.png";   
+import image3 from "../../images/imgm3.png";
+import image4 from "../../images/imgm4.png";
+import "./home.css";
 
 function Home(){
     return(

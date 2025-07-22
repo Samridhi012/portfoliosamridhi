@@ -1,5 +1,5 @@
-import Header from "./Header";
-import Home from "./Home";
+import Header from "./Header/Header";
+import Home from "./Home/Home";
 import Skills from "./Skills/SkillsMain";
 
 function App() {

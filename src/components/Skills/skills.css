@@ -1,0 +1,198 @@
+/*---------------------OVERALL DESIGN OF SKILLS SECTION----------------------*/
+.skills h1{
+    font-size: 7.5rem;
+	  font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: -0.02em;
+    position: absolute;
+    top: 83%;
+    left: 49%;
+    transform: translateX(-50%);
+    pointer-events: none;
+    white-space: nowrap;
+    font-family: "Arial Black", "Arial Bold", Arial, sans-serif;
+    background: linear-gradient(
+      to bottom,
+      rgba(8, 42, 123, 0.526) 30%,
+      rgb(255 255 255 / 0%) 76%
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.skill-display{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.skill-display .block{
+  transition: box-shadow 0.4s, transform 0.4s;
+}
+
+.block h2{
+  font-size: 25px;
+  margin-bottom: 15px;
+  color: #00395D;
+  text-align: center;
+}
+
+.block .box{
+        display: grid;
+        grid-template-rows: auto;
+        grid-template-columns: repeat(2, 150px);
+        text-align: center;
+        border: rgb(209, 208, 208) 1px solid;
+        position: absolute;
+        top: 8%;
+        width: 300px;
+        height: 470px;
+        background: white;
+        border-radius: 20px;
+        overflow: hidden;
+        box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+        transition: all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        cursor: pointer;
+}
+
+/*-------------------SKILLS DISPLAY BOX-----------------------------*/
+
+.skill-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    border-radius: 10px;
+    border-radius: 25px;
+    transition: transform 0.3s ease;
+}
+.skill-info:hover{
+  transform: scale(1.2);
+}
+.skill-info img{
+  width: 35px;
+  height: 35px;
+  margin-right: 15px;
+}
+.skill-info p{
+  font-size: 18px;
+  color: black;
+}
+
+/*---------------------------RIGHT/LEFT BUTTONS----------------------------*/
+.nav-arrow {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	background: rgba(8, 42, 123, 0.6);
+	color: white;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+	z-index: 20;
+	transition: all 0.3s ease;
+	font-size: 1.5rem;
+	border: none;
+	outline: none;
+	padding-bottom: 4px;
+}
+.nav-arrow:hover {
+	background: rgba(0, 0, 0, 0.8);
+	transform: translateY(-50%) scale(1.1);
+}
+.nav-arrow.left {
+	left: -330px;
+	padding-right: 5px;
+}
+.nav-arrow.right {
+	right: -270px;
+	padding-left: 5px;
+}
+
+/*---------------------------------CAROUSEL DESIGN----------------------------*/
+.carousel-container {
+	width: 100%;
+	height: 450px;
+	position: relative;
+	margin-top: 120px;
+  margin-bottom: 100px;
+}
+.carousel-wrapper-3d {
+  width: 100%;
+  height: 470px;
+  perspective: 1200px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel-inner-3d {
+  width: 350px;
+  height: 470px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.carousel-card-heading {
+  text-align: center;
+  font-size: 1.7rem;
+  color: #00395D;
+  margin-top: 0px;
+  letter-spacing: 1px;
+}
+.carousel-card-3d {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 280px;
+  height: 470px;
+  opacity: 0;
+  transition: 
+    transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+    opacity 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+    z-index 0s;
+  will-change: transform, opacity;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.carousel-card-3d.center {
+  opacity: 1;
+  transform: translateX(0) scale(1) rotateY(0deg);
+  z-index: 3;
+  pointer-events: auto;
+}
+
+.carousel-card-3d.right-1 {
+  opacity: 1;
+  transform: translateX(220px) scale(0.85) rotateY(-35deg);
+  z-index: 2;
+  pointer-events: auto;
+}
+
+.carousel-card-3d.left-1 {
+  opacity: 1;
+  transform: translateX(-220px) scale(0.85) rotateY(35deg);
+  z-index: 2;
+  pointer-events: auto;
+}
+
+.carousel-card-3d.hidden {
+  opacity: 0;
+  transform: translateX(0) scale(0.7) rotateY(0deg);
+  z-index: 1;
+  pointer-events: none;
+}
