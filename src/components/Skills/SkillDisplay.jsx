@@ -20,7 +20,6 @@ function SkillDisplay(props){
 
     return (
         <div className={`block ${props.name.toLowerCase()}`}>
-            {/* <h2>{props.name}</h2> */}
             <div className={`box ${props.name.toLowerCase()}`}>
                 {selectArray.languages.map((language, id) => (
                     <SkillFlashcard skill={language.name} icon={language.icon} key={id} />

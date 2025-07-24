@@ -1,0 +1,143 @@
+.experience{
+    background-image: url(https://wpthemebooster.com/demo/themeforest/html/kimono/assets/img/more/texture-3.png);
+    background-size: contain;
+    background-position: top center;
+    background-repeat: no-repeat;
+    /* background-color: rgba(165, 42, 42, 0.63); */
+    position: relative;
+    padding: 90px 0px;
+}
+
+.experience .container{
+    max-width: 1300px;
+    width: 100%;
+    padding-right: .75rem;
+    padding-left: .75rem;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.container h1{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 5.5rem;
+	font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: -0.06em;
+    position: absolute;
+    top: -4%;
+    left: 49%;
+    transform: translateX(-50%);
+    pointer-events: none;
+    white-space: nowrap;
+    font-family: "Arial Black", "Arial Bold", Arial, sans-serif;
+    background: linear-gradient(
+      to bottom,
+      rgba(8, 42, 123, 0.526) 30%,
+      rgb(255 255 255 / 0%) 76%
+    );
+    /* -webkit-background-clip: text; */
+    background-clip: text;
+    color: transparent;
+}
+
+.container .cards{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.exp-card-list {
+  display: grid;
+  grid-template-columns: repeat(4, 345px); 
+  grid-template-rows: auto;
+}
+
+.details{
+    width: 90%;
+}
+
+.details .display{
+    background: transparent;
+    opacity: 0.9;
+    border-radius: 0px;
+    transition: all 0.5s ease-in-out;
+    padding: 30px;
+    height: 80%;
+}
+
+.details .display.active{
+    background-color: #61c4bfab;
+}
+
+.details .display.active:hover,
+.details .display.active:active{
+    background-color: rgba(221, 221, 221, 0.06);
+}
+
+.display .inner{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    /* gap: 40px; */
+}
+
+.inner .icon{
+    /* position: relative;
+    max-width: 70px;
+    max-height: 50px; */
+    display: flex;
+    direction: row;
+}
+/* 
+.icon img{
+    width: 30px;
+    height: 30px;
+    transition: all 0.5s ease-in-out;
+} */
+
+.icon h1{
+    position: relative;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: 0px;
+    margin-top: 0px;
+    margin-bottom: 15px;
+    transition: all 0.5s ease-in-out;
+}
+
+.icon h1:after{
+    content: '';
+    width: 67px;
+    height: 1px;
+    display: inline-block;
+    background-color: rgba(15, 15, 15, 0.1);
+    transition: all 0.5s ease-in-out;
+}
+
+.details .display:hover h1:after,
+.details .display:active h1:after{
+  width: 100%;
+  background-color: #43ffec;
+}
+
+.inner .text{
+    font-size: 16px;
+    line-height: 26px;
+    margin-bottom: 0px;
+    transition: all 0.5s ease-in-out;
+    color: #002e6f;
+}
+
+.text .card-count{
+    font-family: "DM Sans", ui-sans-serif;
+    font-size: 48px;
+    font-weight: 600;
+    line-height: normal;
+    text-align: right;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgba(0, 0, 0, 0.393);
+    -webkit-text-fill-color: transparent;
+    margin-top: 30px;
+    margin-bottom: 5px;
+}
