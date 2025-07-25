@@ -16,18 +16,17 @@ function ExpCard() {
           <div className={`display${hoveredIdx === idx ? "" : " active"}`}>
             <div className="inner display-container">
               <div className="icon card-icon">
-                <h3>{data.company} - {data.position}</h3>
-                {/* <img src={data.logo} alt="icon" /> */}
+                <h2>{data.company} - {data.position}</h2>
               </div>
 
               <div className="text card-text">
-                <h1>{data.location}</h1>
+                <h3>{data.location}</h3>
                 <h5>{data.timePeriod}</h5>
                 <h5>{data.modeAttended}</h5>
                 <p>{data.description}</p>
-                <h6 className="card-count">
+                <h4 className="card-count">
                   {String(idx + 1).padStart(2, "0")}
-                </h6>
+                </h4>
               </div>
             </div>
           </div>
