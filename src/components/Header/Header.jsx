@@ -19,7 +19,7 @@ function Header(){
                 <span>Download Resume</span>
             </a> */}
 
-            <a href="https://www.google.com"><button class="resume-btn"><span>Download Resume</span></button></a>
+            <a href="https://www.google.com"><button className="resume-btn"><span>Download Resume</span></button></a>
         </div>
     );
 }

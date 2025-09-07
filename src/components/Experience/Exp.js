@@ -4,7 +4,7 @@ export const expData = [
         "location" : "Remote",
         "position" : "Contributor",
         "modeAttended" : "Online",
-        "timePeriod" : "Aug'25 - Oct'25",
+        "timePeriod" : "Aug'25 - Nov'25",
         "description" : "Collaborated to develop and improve open-source projects. Demonstrated problem-solving abilities through code contributions and technical solutions."
     },
     {
