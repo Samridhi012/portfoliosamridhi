@@ -16,7 +16,7 @@ function ProjectCard(){
                                 <span className="logo" key={idx}>{tech}</span>
                             ))}
                         </div>
-                        <a href="#" target="_blank" class="project-link">Check it Out</a>
+                        <a href={info.link} class="project-link">🔗View here</a>
                     </div>
                 </div>
             ))}

@@ -62,28 +62,27 @@ export const othersInfo = {
     "languages" : [
         {
             "name" : "Python",
-            "icon" : "https://img.icons8.com/?size=100&id=13441&format=png&color=000000",
-            "color" : "orange"
+            "icon" : "https://img.icons8.com/?size=100&id=13441&format=png&color=000000"
         },
         {
             "name" : "Java",
-            "icon" : "https://img.icons8.com/?size=100&id=13679&format=png&color=000000",
-            "color" : "orange"
+            "icon" : "https://img.icons8.com/?size=100&id=13679&format=png&color=000000"
         },
         {
             "name" : "Git",
-            "icon" : "https://img.icons8.com/?size=100&id=20906&format=png&color=000000",
-            "color" : "orange"
+            "icon" : "https://img.icons8.com/?size=100&id=20906&format=png&color=000000"
         },
         {
             "name" : "Postman",
-            "icon" : "https://img.icons8.com/?size=100&id=EPbEfEa7o8CB&format=png&color=000000",
-            "color" : "orange"
+            "icon" : "https://img.icons8.com/?size=100&id=EPbEfEa7o8CB&format=png&color=000000"
         },
         {
             "name" : "Canva",
-            "icon" : "https://img.icons8.com/?size=100&id=iWw83PVcBpLw&format=png&color=000000",
-            "color" : "orange"
+            "icon" : "https://img.icons8.com/?size=100&id=iWw83PVcBpLw&format=png&color=000000"
+        },
+        {
+            "name" : "DSA",
+            "icon" : "https://img.icons8.com/?size=100&id=112991&format=png&color=000000"
         }
     ]
 };
